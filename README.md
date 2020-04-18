@@ -1,6 +1,6 @@
 # Accounting Notebook
 
-![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/seguijoaquin/accounting-notebook?style=plastic)
+![GitHub go.mod Go version](https://img.shields.io/badge/Golang-v1.13-blue.svg)
 ![technology React](https://img.shields.io/badge/React-v16.13.1-blue.svg)
 
 ## Responsibilities

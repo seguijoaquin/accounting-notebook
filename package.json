@@ -1,0 +1,25 @@
+{
+  "name": "accounting-notebook",
+  "version": "1.0.0",
+  "description": "A simple accounting notebook app",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently -m 1 -k \"npm run server\" \"npm run client\"",
+    "server": "docker build -t api-img ./server && docker run -p 8080:8080 api-img",
+    "client": "cd client/ && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seguijoaquin/accounting-notebook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seguijoaquin/accounting-notebook/issues"
+  },
+  "homepage": "https://github.com/seguijoaquin/accounting-notebook#readme",
+  "dependencies": {
+    "accounting-notebook-client": "file:client",
+    "concurrently": "^5.1.0"
+  }
+}
